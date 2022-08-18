@@ -20,8 +20,10 @@
     <section id="Events">
       <h2>Events in action</h2>
       <!-- we are using v-on directive to act on certain event after : click event   -->
-      <button v-on:click="counter++">Add</button>
-      <button v-on:click="counter--">Reduce</button>
+      <!-- we can use function v-on by using calling fun also rather calling add()like this we can directly write add -->
+      <!-- calling add directly vue can knows that it is the function  -->
+      <button v-on:click="add(5)">Add</button>
+      <button v-on:click="reduce(5)">Reduce</button>
       <p>Result: {{counter}}</p>
     </section>
   </body>

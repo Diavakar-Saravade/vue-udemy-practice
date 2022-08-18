@@ -9,7 +9,15 @@ const app = Vue.createApp({
             counter: 0,
         };
     },
-
+    methods: {
+        add(num) {
+            //we can write fun and give parameter and can directly call inside the v-on:click events directly
+            this.counter = this.counter + num;
+        },
+        reduce(num) {
+            this.counter = this.counter - num;
+        }
+    }
 });
 
 app.mount('#Events')
