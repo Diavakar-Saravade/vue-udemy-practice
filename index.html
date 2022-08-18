@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!--"https://unpkg.com/vue@next" this is for running vue application and importing some files-->
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Course Goals</h1>
+    </header>
+    <section id="user-goal">
+      <h2>My Course Goal</h2>
+        <!-- This {{}} syntax is call interpolation  -->
+        <!-- we cant use interpolation syntax anywere because this is having scope till user-goal only  -->
+        <!-- we can call function directly in mustache syntax -->
+       <p>{{outputGoal()}}</p>
+       <!-- v-html directive is used to render all then html elements which we are using in our code eg<h2>my name is div</h2> -->
+       <!-- <p v-html="outputGoal()"></p> -->
+       <!-- v-bind is used to set values of attributes -->
+       <p>Learn more <a v-bind:href="vueLink"> About vue</a></p>
+    </section>
+  </body>
+</html>
