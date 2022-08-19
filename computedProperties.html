@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!--"https://unpkg.com/vue@next" this is for running vue application and importing some files-->
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="computedProperties.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Course Goals</h1>
+    </header>
+    <section id="Events">
+      <h2>Computed properties</h2>
+      <button v-on:click="add(5)">Add</button>
+      <button v-on:click="reduce(5)">Reduce</button>
+      <p>Result: {{counter}}</p>
+      <input type="text" v-model="name">
+      <button v-on:click="reset">Reset Input</button>
+      <!-- AS fullName() is written inside computed property thats wahy when we click reset it only reseting The input name block -->
+      <p>your name: {{fullName}}</p>
+    </section>
+  </body>
+</html>

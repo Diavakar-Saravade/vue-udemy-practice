@@ -30,15 +30,15 @@
       <p>Result: {{counter}}</p>
       <!-- the best event to listen on input html elemet is v-on:input event $ can get the value stored  -->
      
-      <!-- <input type="text" v-on:input="setName">
-      <p>user name : {{name}}</p> -->
+      <input type="text" v-on:input="setName">
+      <p>user name : {{name}}</p>
       
       <!-- there are certain modifires which we can directly give after 'submit'event.'prevent'modifire   -->
 
-      <!-- <form v-on:submit.prevent="submitForm">
+      <form v-on:submit.prevent="submitForm">
         <input type="text">
         <button>sign up</button>
-      </form> -->
+      </form>
 
       <!-- v-bind:value="name" is for fetching name and v-on:input="setName" is for input stored in setName fun and just call it -->
       
@@ -47,9 +47,9 @@
 <!-- v-model directive is simply just the shortcut for v:bind="value" v-on:input="setName" -->
 <!-- this is the concept called two way binding --> 
 <!-- v-model derictive is used for updating  -->
-      <input type="text" v-model="name">
+      <!-- <input type="text" v-model="name">
       <button v-on:click="reset">Reset Input</button>
-      <p>your name: {{name}}</p>
+      <p>your name: {{name}}</p> -->
     </section>
   </body>
 </html>
