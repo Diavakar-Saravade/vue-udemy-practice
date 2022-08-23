@@ -24,6 +24,7 @@
       <p>Result: {{counter}}</p>
       <input type="text" v-model="name">
       <button v-on:click="reset">Reset Input</button>
+      <!-- Insted of using v-on:click we can use @click this is called shorthand  -->
       <!-- AS fullName() is written inside computed property thats wahy when we click reset it only reseting The input name block -->
       <p>your name: {{fullName}}</p>
     </section>

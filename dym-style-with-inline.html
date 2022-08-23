@@ -1,0 +1,20 @@
+<html>
+    <header>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <h1>vue Dynamic styling</h1>
+
+
+    </header>
+    <section id="styling">
+        <!-- we can use :style attribte directly for giving styles dynamically   -->
+        <div class="demo" :style="{borderColor:boxSelected ?'red' : '#ccc' }"
+        @click="boxSelected('A')"
+        ></div>
+        <!-- classes and computed properties--> -->
+        <div class="demo" ::style="{borderColor:boxSelected ?'red' : '#ccc' }"
+        @click="boxSelected('B')"></div>
+        <div class="demo":style="{borderColor:boxSelected ?'red' : '#ccc' }"
+        @click="boxSelected('C')"></div>
+    </section>
+</html>
